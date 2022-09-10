@@ -1,8 +1,13 @@
 #cadastro de veiculos
 
 input (str("Digite a placa do veículo de acordo com o modelo(AAA1111): "))
-print(f"Veiculo cadastrado !")
+input (str("Digite o modelo do veiculo: "))
+input (str("Digite a montadora do veiculo: "))
+int (input("Digite o ano de modelo do veiculo: "))
 
+print("-----------------------------")
+print(f"Veiculo cadastrado !")
+print("-----------------------------")
 
 
 #definindo horario
