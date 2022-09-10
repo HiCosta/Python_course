@@ -1,7 +1,7 @@
 #cadastro de veiculos
 
-input (str("Digite a placa do veículo de acordo com o modelo(AAA1111): ").upper)
-
+input (str("Digite a placa do veículo de acordo com o modelo(AAA1111): "))
+print(f"Veiculo cadastrado !")
 
 
 
