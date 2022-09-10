@@ -1,5 +1,8 @@
 #cadastro de veiculos
 
+from multiprocessing.forkserver import read_signed
+
+
 input (str("Digite a placa do veículo de acordo com o modelo(AAA1111): "))
 input (str("Digite o modelo do veiculo: "))
 input (str("Digite a montadora do veiculo: "))
@@ -25,4 +28,39 @@ if minentrada > minsaida:
 else:
     minfinal = minsaida - minentrada
 
+print("---------------------------------------------------------------------------")
 print(f"O veículo ficou no estacionamento por {hfinal} horas e {minfinal} minutos.")
+print("---------------------------------------------------------------------------")
+
+
+#definindo valores por tempo
+
+print("-------------------------------------")
+print("Lista de valores por tempo de servico")
+print("-------------------------------------")
+
+print("1 HORA ---------- R$10 REAIS\nMEIA HORA ---------- R$5 REAIS\n**Apos uma hora, a cada 15 MIN R$2,50")
+
+
+if hfinal == 00:
+    if minfinal >= 15 and minfinal < 30:
+        valor =+ 2,50
+    elif minfinal == 30:
+        valor =+ 5
+    elif minfinal >=30 and minfinal < 60:
+        valor =+ 5
+elif hfinal > 0:
+        if minfinal >= 15 and minfinal < 30:
+            valor = (hfinal * 10) + 2,50
+        elif minfinal == 30:
+         valor = (hfinal * 10) + 5
+        elif minfinal >=30 and minfinal < 60:
+         valor = (hfinal * 10) + 5
+        else:
+            valor = hfinal * 10        
+    
+    
+print("-----------------------------------------")
+print(f"O valor total do servico e de: R${valor:.2f}")
+print("-----------------------------------------")
+
