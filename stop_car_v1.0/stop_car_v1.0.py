@@ -49,6 +49,8 @@ if hfinal == 00:
         valor =+ 5
     elif minfinal >=30 and minfinal < 60:
         valor =+ 5
+    elif minfinal < 15:
+        valor =+ 2,50
 elif hfinal > 0:
         if minfinal >= 15 and minfinal < 30:
             valor = (hfinal * 10) + 2,50
@@ -60,7 +62,7 @@ elif hfinal > 0:
             valor = hfinal * 10        
     
     
-print("-----------------------------------------")
-print(f"O valor total do servico e de: R${valor:.2f}")
-print("-----------------------------------------")
+print("---------------------------------------------")
+print(f"O valor total do servico e de: R${valor}")
+print("---------------------------------------------")
 
