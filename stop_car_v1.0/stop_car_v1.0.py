@@ -3,7 +3,7 @@
 from multiprocessing.forkserver import read_signed
 
 
-input (str("Digite a placa do veículo de acordo com o modelo(AAA1111): "))
+input (str("Digite a placa do veículo de acordo com o modelo(AAA1111) ou modelo (AAA1A11): "))
 input (str("Digite o modelo do veiculo: "))
 input (str("Digite a montadora do veiculo: "))
 int (input("Digite o ano de modelo do veiculo: "))
